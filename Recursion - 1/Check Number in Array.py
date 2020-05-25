@@ -1,0 +1,26 @@
+def checkNumber(arr, x):
+    if arr[0]==x:
+        return True
+    try:
+        sample = checkNumber(arr[1:],x)
+    except:
+        return False
+    if sample:
+        return True
+    else:
+        return False
+
+
+
+
+# Main
+from sys import setrecursionlimit
+setrecursionlimit(11000)
+n=int(input())
+arr=list(int(i) for i in input().strip().split(' '))
+x=int(input())
+if checkNumber(arr, x):
+    print('true')
+else:
+    print('false')
+
