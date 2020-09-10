@@ -4,10 +4,10 @@ def BinarySearch(a,x,si,ei):
     mid=(si+ei)//2
     if a[mid]==x:
         return mid
-    elif mid >x:
+    elif a[mid] >x:
         ei =mid-1
         return  BinarySearch(a,x,si,ei)
-    elif mid <x:
+    elif a[mid] <x:
         si=mid+1
         return  BinarySearch(a,x,si,ei)
 
