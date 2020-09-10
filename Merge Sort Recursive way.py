@@ -38,5 +38,3 @@ MergeSort(arr)
 
 for n in arr:
     print(n,end=" ")
-
-
