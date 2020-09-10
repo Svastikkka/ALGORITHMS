@@ -37,7 +37,5 @@ def QuickSort(a,si,ei):
     QuickSort(a,pi+1,ei)
 
 arr=[6,5,4,3,7,8,9,1,2]
-print(partion(arr,0,len(arr)-1))
-
-print(QuickSort(arr,0,len(arr)-1))
+QuickSort(arr,0,len(arr)-1)
 print(arr)
