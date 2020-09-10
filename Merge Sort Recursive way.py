@@ -32,7 +32,6 @@ def MergeSort(a):
     MergeSort(a2)
     merge(a1, a2, a)
 
-num=int(input())
 arr=list(map(int,input().split()))
 MergeSort(arr)
 
